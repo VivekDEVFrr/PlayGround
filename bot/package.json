@@ -1,0 +1,22 @@
+{
+  "name": "supernova-smp-bot",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Supernova SMP Discord bot — welcome, status, community and staff tools. Contains no whitelist implementation by design.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "minecraft-server-util": "^5.4.4"
+  },
+  "optionalDependencies": {
+    "@napi-rs/canvas": "^0.1.53"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "supernova-dashboard-api",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Read-only Minecraft status API, player lookup and optional Pterodactyl proxy for the Supernova SMP dashboard.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "minecraft-server-util": "^5.4.4"
+  }
+}
